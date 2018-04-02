@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile xmlns="http://www.ni.com/PlatformFramework">
+    <SourceModelFeatureSet>
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="Editor" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/PlatformFramework" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="SystemDesigner" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/SystemDesigner/SystemDiagram" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="Desktop SystemDesigner Plugin" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/SystemDesigner/Desktop/SystemDiagram" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="SystemDesigner" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/SystemDesigner/EnvoyManagement" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="SystemDesigner" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/SystemDesigner/SystemModelCore" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="SystemDesigner" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/SystemDesigner/SystemModel" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="VI SystemDesigner Plugin" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/SystemDesigner/Vi" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="Desktop SystemDesigner Plugin" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/SystemDesigner/Desktop/SystemModel" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="SystemDesigner Discovery" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/SystemDesigner/Discovery" Version="3.0.0.49152" />
+    </SourceModelFeatureSet>
+    <Project xmlns="http://www.ni.com/PlatformFramework">
+        <ProjectSettings DocumentTypeIdentifier="ProjectSettings" Id="1" Name="ZProjectSettings" PersistentDockingLayoutRule="2">
+            <p.DockingLayout />
+        </ProjectSettings>
+        <DefinitionReference Bindings="Envoy,DefinitionReference,EmbeddedReference,NationalInstruments.ProjectExplorer.Modeling.ProjectDataManager,ProjectDefaultCopyPasteServiceOptOut" DocumentTypeIdentifier="NationalInstruments.ProjectExplorer.Modeling.ProjectDataManager" Id="2" Name="ProjectExplorer">
+            <ProjectExplorer>
+                <ProjectRootItem AssociatedItemIdentifier="2" Id="12">
+                    <ProjectDataItem AssociatedItemIdentifier="38" Id="39" />
+                    <ProjectDataItem AssociatedItemIdentifier="54" Id="55" />
+                    <ProjectDataItem AssociatedItemIdentifier="59" Id="60" />
+                    <ProjectDataItem AssociatedItemIdentifier="64" Id="65" />
+                </ProjectRootItem>
+            </ProjectExplorer>
+        </DefinitionReference>
+        <DefinitionReference Bindings="Envoy,DefinitionReference,EmbeddedReference,NationalInstruments.SystemDesigner.SystemDiagram.Moc,NationalInstruments.SystemDesigner.SystemDiagram.SystemDiagramDefinition" DocumentTypeIdentifier="NationalInstruments.SystemDesigner.SystemDiagram.SystemDiagramDefinition" Id="3" Name="SystemDiagram">
+            <SystemDiagram ProcessMappings="20:26, 21:30, 41:42, 62:63, 57:58, 67:68" SystemDiagramVersion="56" xmlns="http://www.ni.com/SystemDesigner/SystemDiagram">
+                <SystemDiagramRootDiagram Id="15">
+                    <DesktopChassis Bounds="107 50 425 516" HasLayoutManager="True" Id="26" ResourceViewHeight="25" ResourceViewWidth="49" SystemModelContent="20" xmlns="http://www.ni.com/SystemDesigner/Desktop/SystemDiagram">
+                        <DocumentModelChassisBackplaneDiagram Bounds="12 30 401 47" Id="27" xmlns="http://www.ni.com/SystemDesigner/SystemDiagram" />
+                        <DocumentModelChassisResourceDiagram Bounds="12 66 401 450" Id="28" xmlns="http://www.ni.com/SystemDesigner/SystemDiagram">
+                            <StockBoard AddSocketsButtonLeft="2.5" BottomDiagram="37" Bounds="0 0 360 445" CollapseRestriction="PermanentlyExpanded" Facade="SystemDiagramDesktopHostViewModel" HomepageDiagram="31" Id="30" MinimumHeight="170" SelectedCategoryInternal="32" SystemModelContent="21">
+                                <BoardHomepageDiagram Bounds="0 90 336 98" CanScroll="False" CategoryViewName="CategoriesResourceTypeView" ColumnMargin="5" Id="31" LeftMargin="5" RowMargin="8">
+                                    <Category Bounds="5 10 82 89" CardViewDiagram="33" CategoryName="Source Code" GridViewDiagram="35" Id="32" />
+                                </BoardHomepageDiagram>
+                                <BoardDiagram Bounds="0 90 336 274" CategoryName="Source Code" Id="33" ScrollVerticalOffset="98">
+                                    <SoftwareCard Bounds="11 10 163 89" CategoryView="CategoriesResourceTypeView" Collapsed="False" Facade="CardFacade" Id="42" SystemModelContent="41" Target=":Project:PC:Tx\.gvi" Template="List" />
+                                    <SoftwareCard Bounds="173 10 163 89" CategoryView="CategoriesResourceTypeView" Collapsed="False" Facade="CardFacade" Id="58" SystemModelContent="57" Target=":Project:PC:Tx_Format\.gvi" Template="List" />
+                                    <SoftwareCard Bounds="11 98 163 89" CategoryView="CategoriesResourceTypeView" Collapsed="False" Facade="CardFacade" Id="63" SystemModelContent="62" Target=":Project:PC:GET_INFORTMATION_DIGIT\.gvi" Template="List" />
+                                    <SoftwareCard Bounds="173 98 163 89" CategoryView="CategoriesResourceTypeView" Collapsed="False" Facade="CardFacade" Id="68" SystemModelContent="67" Target=":Project:PC:GET_INFORMATION_ANALOG\.gvi" Template="List" />
+                                </BoardDiagram>
+                                <BoardDiagram Bounds="0 90 336 98" CategoryName="Source Code" Id="35" ScrollVerticalOffset="0">
+                                    <DocumentModelDataGrid Bounds="6 0 349 96" CardDiagram="33" Docking="Stretch" Id="36" />
+                                </BoardDiagram>
+                                <BoardDiagram Bounds="0 0 100 98" CanScroll="False" CategoryName="" Id="37" LeftMargin="0" TopMargin="0" />
+                            </StockBoard>
+                        </DocumentModelChassisResourceDiagram>
+                        <DocumentModelChassisBackplaneDiagram Bounds="0 0 100 60" Id="29" xmlns="http://www.ni.com/SystemDesigner/SystemDiagram" />
+                    </DesktopChassis>
+                </SystemDiagramRootDiagram>
+                <EnvoyFacadeManager Id="5" RootEnvoy="3" xmlns="http://www.ni.com/SystemDesigner/EnvoyManagement">
+                    <Tree Id="6" Kind="{http://www.ni.com/SystemDesigner/SystemModelCore}Tree" Name="Software Layer" xmlns="http://www.ni.com/SystemDesigner/SystemModelCore">
+                        <Process Derivatives="T:41" Id="40" Kind="{http://www.ni.com/SystemDesigner/Vi}Process.Vi" Name="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" p7:Process.Bounds="11 10 163 89" p7:Process.Collapsed="False" p8:Process.AliasName="Tx.gvi" p8:Process.AssociatedIdentifier="38" p8:Process.Qualifiedname=":Project:PC:Tx\.gvi" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/SystemDiagram" />
+                        <Process Derivatives="T:57" Id="56" Kind="{http://www.ni.com/SystemDesigner/Vi}Process.Vi" Name="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" p7:Process.Bounds="173 10 163 89" p8:Process.AliasName="Tx_Format.gvi" p8:Process.AssociatedIdentifier="54" p8:Process.Qualifiedname=":Project:PC:Tx_Format\.gvi" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/SystemDiagram" />
+                        <Process Derivatives="T:62" Id="61" Kind="{http://www.ni.com/SystemDesigner/Vi}Process.Vi" Name="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" p7:Process.Bounds="11 98 163 89" p8:Process.AliasName="GET_INFORTMATION_DIGIT.gvi" p8:Process.AssociatedIdentifier="59" p8:Process.Qualifiedname=":Project:PC:GET_INFORTMATION_DIGIT\.gvi" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/SystemDiagram" />
+                        <Process Derivatives="T:67" Id="66" Kind="{http://www.ni.com/SystemDesigner/Vi}Process.Vi" Name="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" p7:Process.Bounds="173 98 163 89" p8:Process.AliasName="GET_INFORMATION_ANALOG.gvi" p8:Process.AssociatedIdentifier="64" p8:Process.Qualifiedname=":Project:PC:GET_INFORMATION_ANALOG\.gvi" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/SystemDiagram" />
+                    </Tree>
+                    <MappingManager Id="7" xmlns="http://www.ni.com/SystemDesigner/SystemModelCore">
+                        <SuperimpositionMapping Id="8" Map="T:18:20, 19:21, 40:41, 61:62, 56:57, 66:67" ReverseMap="T:20:18, 21:19, 41:40, 62:61, 57:56, 67:66" Sources="T:6,17">
+                            <Tree Id="9" Kind="{http://www.ni.com/SystemDesigner/SystemModelCore}Tree" Name="Root Superimposition">
+                                <Process Id="20" Kind="{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Process.Desktop" Name="Desktop" Prototypes="T:18">
+                                    <Process Id="21" Kind="{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Process.DesktopHost" Name="DesktopHost" Prototypes="T:19">
+                                        <Process Id="41" Kind="{http://www.ni.com/SystemDesigner/Vi}Process.Vi" Name="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Prototypes="T:40" />
+                                        <Process Id="57" Kind="{http://www.ni.com/SystemDesigner/Vi}Process.Vi" Name="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Prototypes="T:56" />
+                                        <Process Id="62" Kind="{http://www.ni.com/SystemDesigner/Vi}Process.Vi" Name="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Prototypes="T:61" />
+                                        <Process Id="67" Kind="{http://www.ni.com/SystemDesigner/Vi}Process.Vi" Name="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Prototypes="T:66" />
+                                    </Process>
+                                </Process>
+                            </Tree>
+                        </SuperimpositionMapping>
+                        <InstanceMapping Id="16" Map="T:{http\://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop/Desktop:18, {http\://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop/Desktop/DesktopHost:19" ReverseMap="T:18:{http\://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop/Desktop, 19:{http\://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop/Desktop/DesktopHost" Sources="T:{http\://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop">
+                            <Tree Id="17" Kind="{http://www.ni.com/SystemDesigner/SystemModelCore}Tree" Name="Desktop Instance">
+                                <Process Derivatives="T:20" Id="18" Kind="{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Process.Desktop" Name="Desktop" Prototypes="T:{http\://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop/Desktop" p9:Process.DiscoveryAlias="localhost" p10:Process.Bounds="107 50 425 516" p11:Process.AssociatedIdentifier="22" p11:Process.Qualifiedname=":Project:PC\ Desktop" xmlns:p11="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p10="http://www.ni.com/SystemDesigner/SystemDiagram" xmlns:p9="http://www.ni.com/SystemDesigner/Discovery">
+                                    <Process Derivatives="T:21" Id="19" Kind="{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Process.DesktopHost" Name="DesktopHost" Prototypes="T:{http\://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop/Desktop/DesktopHost" p10:Process.Bounds="0 0 360 445" p11:Process.AssociatedIdentifier="23" p11:Process.Qualifiedname=":Project:PC" />
+                                </Process>
+                            </Tree>
+                        </InstanceMapping>
+                    </MappingManager>
+                </EnvoyFacadeManager>
+            </SystemDiagram>
+            <DefinitionReference Bindings="Envoy,DefinitionReference,NationalInstruments.SystemDesigner.SystemDiagram.SystemDiagramChassisModel,EmbeddedReference,ContentKind_{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Process.Desktop,ProcessBackedProjectServiceMetaFactory" DocumentTypeIdentifier="NationalInstruments.SystemDesigner.SystemDiagram.SystemDiagramChassisModel" Id="22" Name="PC\ Desktop">
+                <SystemDiagramChassis Name="PC\ Desktop" xmlns="http://www.ni.com/SystemDesigner/SystemDiagram" />
+                <Target Bindings="Envoy,DefinitionReference,NationalInstruments.SystemDesigner.SystemDiagram.SystemDiagramTargetModel,SystemDiagramEnumerateTargetService,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy,ContentKind_{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Process.DesktopHost,InProcessNativeDesktopTarget,ProcessBackedProjectServiceMetaFactory" DocumentTypeIdentifier="NationalInstruments.SystemDesigner.SystemDiagram.SystemDiagramTargetModel" Id="23" Name="PC">
+                    <DefinitionReference Bindings="Envoy,DefinitionReference,RepositoryManagerDefinition,EmbeddedReference" DocumentTypeIdentifier="RepositoryManagerDefinition" Id="24" Name="vi\.lib\.Common\.PC" Reparentable="False">
+                        <RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Common&quot;" Name="vi\.lib\.Common\.PC" />
+                    </DefinitionReference>
+                    <DefinitionReference Bindings="Envoy,DefinitionReference,RepositoryManagerDefinition,EmbeddedReference" DocumentTypeIdentifier="RepositoryManagerDefinition" Id="25" Name="vi\.lib\.Native\.PC" Reparentable="False">
+                        <RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Native&quot;" Name="vi\.lib\.Native\.PC" />
+                        <SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,SourceFileReference" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Id="48" Name="niUSRP\ Open\ Tx\ Session\.gvi" />
+                        <SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,SourceFileReference" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Id="49" Name="niUSRP\ Configure\ Signal\.gvi" />
+                        <SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,SourceFileReference" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Id="50" Name="Current\ VIs\ Path\.gvi" />
+                        <SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,SourceFileReference" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Id="51" Name="niUSRP\ Get\ Error\.gvi" />
+                        <SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,SourceFileReference" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Id="52" Name="niUSRP\ Write\ Tx\ Data\ \(I16\)\.gvi" />
+                        <SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,SourceFileReference" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Id="53" Name="niUSRP\ Close\ Session\.gvi" />
+                        <SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,SourceFileReference" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Id="73" Name="Sound\ Input\ Configure\.gvi" />
+                        <SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,SourceFileReference" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Id="74" Name="_Get\ Sound\ Error\ From\ Return\ Value\.gvi" />
+                        <SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,SourceFileReference" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Id="76" Name="Sound\ Input\ Read\.gvi" />
+                        <SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,SourceFileReference" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Id="77" Name="_GetConfiguration\.gvi" />
+                        <SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,SourceFileReference" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Id="78" Name="_2DArrToArrWfms\.gvi" />
+                        <SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,SourceFileReference" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Id="80" Name="Sound\ Input\ Clear\.gvi" />
+                        <SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,SourceFileReference" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Id="82" Name="Sound\ Input\ Start\.gvi" />
+                        <SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,SourceFileReference" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Id="84" Name="Sound\ Input\ Stop\.gvi" />
+                    </DefinitionReference>
+                    <SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,SourceFileReference" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Id="38" Name="Tx\.gvi" StoragePath="Tx.gvi" />
+                    <SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,SourceFileReference" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Id="54" Name="Tx_Format\.gvi" StoragePath="Tx_Format.gvi" />
+                    <SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,SourceFileReference" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Id="59" Name="GET_INFORTMATION_DIGIT\.gvi" StoragePath="GET_INFORTMATION_DIGIT.gvi" />
+                    <SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,SourceFileReference" DocumentTypeIdentifier="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Id="64" Name="GET_INFORMATION_ANALOG\.gvi" StoragePath="GET_INFORMATION_ANALOG.gvi" />
+                    <SystemDiagramTarget Name="PC" xmlns="http://www.ni.com/SystemDesigner/SystemDiagram" />
+                </Target>
+            </DefinitionReference>
+        </DefinitionReference>
+        <Target Bindings="Envoy,DefinitionReference,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy,NullTarget" DocumentTypeIdentifier="NullTarget" Id="10" Name="NullTarget">
+            <NullTarget />
+        </Target>
+        <Target Bindings="Envoy,DefinitionReference,DataDepot,ProjectDefaultCopyPasteServiceOptOut,ProjectDefaultDragDropServiceOptOut,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy" DocumentTypeIdentifier="DataDepot" Id="14" Name="DataDepot">
+            <DataDepot />
+        </Target>
+    </Project>
+    <ProjectInformation Author="" xmlns="http://www.ni.com/PlatformFramework">
+        <p.Description></p.Description>
+    </ProjectInformation>
+</SourceFile>
