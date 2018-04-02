@@ -4,6 +4,7 @@
         <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="3.0.0.49154" />
         <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="Editor" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/PlatformFramework" Version="3.0.0.49152" />
         <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.56744" FeatureSetName="Common Language Components" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/MocCommon" Version="3.0.0.49152" />
     </SourceModelFeatureSet>
     <VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
         <Icon Id="2" ListViewIconCrop="0 0 50 50" xmlns="http://www.ni.com/PlatformFramework">
@@ -17,7 +18,7 @@
             </IconPanel>
         </Icon>
         <ConnectorPane Height="50" Id="9" ListViewHeight="45" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/PlatformFramework">
-            <ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="15" />
+            <ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="124" />
             <ConnectorPaneTerminal Hotspot="0 15" />
             <ConnectorPaneTerminal Hotspot="0 25" />
             <ConnectorPaneTerminal Hotspot="0 35" />
@@ -37,13 +38,47 @@
         <MethodDocumentation xmlns="http://www.ni.com/PlatformFramework" />
         <DiagramUnplacedItems Id="10" />
         <FrontPanelUnplacedItems Id="11">
-            <ArrayViewer ArrayElement="[UIModel]18" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Id="21" IsFixedSize="[bool]False" Name="[string] 8bit -&gt; 16bit -&gt; VALID?!" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Value="{DataItemBinding Id=15}" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+            <ArrayViewer ArrayElement="[UIModel]127" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Id="130" Name="[string]input bit stream" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Value="{DataItemBinding Id=124}" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
                 <p.DefaultElementValue>0</p.DefaultElementValue>
-                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="18" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Name="[string]Child" ValueType="[Type]Int16" Width="[float]69" />
+                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="127" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Name="[string]Child" ValueType="[Type]Int8" Width="[float]69" />
             </ArrayViewer>
         </FrontPanelUnplacedItems>
         <BlockDiagram Id="12">
-            <MethodCall Bounds="545 230 50 50" DomainName="NI.LabVIEW.ModulationDigital" Id="14" Target="MT\ Modulate\ PSK\.gvi">
+            <MethodCall Bounds="460 325 50 50" DomainName="NI.LabVIEW.ModulationDigital" Id="96" Target="MT\ Generate\ PSK\ System\ Parameters\(map\)\.gvi">
+                <p.MethodDeclaration>
+                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                        <Parameter Id="T0" Desc="PSK type" />
+                        <Parameter Id="L0" Desc="samples per symbol" />
+                        <Parameter Id="L1" Desc="symbol values" />
+                        <Parameter Id="L2" Desc="differential PSK" />
+                        <Parameter Id="L4" Desc="error in" />
+                        <Parameter Id="R1" Desc="PSK system parameters" />
+                        <Parameter Id="R2" Desc="bits per symbol" />
+                        <Parameter Id="R4" Desc="error out" />
+                    </MethodDeclaration>
+                </p.MethodDeclaration>
+                <Terminal DataType="@283220408_0" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Int32" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Int32[]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="@-401142148_0" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Error" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="@830679310_0" Direction="Output" Hotspot="50 15" Id="R1" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Int32" Direction="Output" Hotspot="50 25" Id="R2" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Error" Direction="Output" Hotspot="50 45" Id="R4" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+            </MethodCall>
+            <Literal Bounds="290 300 99 15" DataType="@283220408_0" Facade="NationalInstruments.MocCommon.Modeling.IEnumBehavior" Id="97" Label="99" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>0</p.Data>
+                <EnumBehavior Id="98" />
+            </Literal>
+            <TextNode AttachedTo="97" Bounds="290 300 0 0" Id="99" Text="PSK type" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="100" Joints="N(97:Out) h(86) N(96:T0)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Literal Bounds="345 325 40 15" DataType="Int32" Facade="NationalInstruments.MocCommon.Modeling.INumericBehavior" Id="104" Label="105" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>16</p.Data>
+                <NumericBehavior Interpretation="Exact" ValueFormatter="LV:" />
+            </Literal>
+            <TextNode AttachedTo="104" Bounds="345 325 0 0" Id="105" Text="samples per symbol" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="106" Joints="N(104:Out) N(96:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+            <MethodCall Bounds="660 325 50 50" DomainName="NI.LabVIEW.ModulationDigital" Id="107" Target="MT\ Modulate\ PSK\.gvi">
                 <p.MethodDeclaration>
                     <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
                         <Parameter Id="L0" Desc="input bit stream" />
@@ -69,15 +104,135 @@
                 <Terminal DataType="ComplexDouble[]" Direction="Output" Hotspot="50 15" Id="R1" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
                 <Terminal DataType="Error" Direction="Output" Hotspot="50 45" Id="R4" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
             </MethodCall>
-            <DataAccessor Bounds="390 230 40 15" DataItem="15" Id="20" Label="22">
-                <Terminal DataType="Int16[]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="108" Joints="N(96:R1) N(107:L1)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="114" Joints="N(96:R4) N(107:L4)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Literal Bounds="660 425 26 15" DataType="Boolean" Facade="NationalInstruments.MocCommon.Modeling.IBooleanBehavior" Id="115" Label="116" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>False</p.Data>
+                <BooleanBehavior />
+            </Literal>
+            <TextNode AttachedTo="115" Bounds="660 425 0 0" Id="116" Text="flush buffers?" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="117" Joints="N(115:Out) h(9) N(107:B2)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Literal Bounds="625 400 26 15" DataType="Boolean" Facade="NationalInstruments.MocCommon.Modeling.IBooleanBehavior" Id="118" Label="119" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>True</p.Data>
+                <BooleanBehavior />
+            </Literal>
+            <TextNode AttachedTo="118" Bounds="625 400 0 0" Id="119" Text="reset?" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="120" Joints="N(118:Out) h(34) N(107:B1)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Literal Bounds="547 255 58 15" DataType="Double" Facade="NationalInstruments.MocCommon.Modeling.INumericBehavior" Id="121" Label="122" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>0x40E5888000000000</p.Data>
+                <NumericBehavior Interpretation="Exact" ValueFormatter="LV:" />
+            </Literal>
+            <TextNode AttachedTo="121" Bounds="547 255 0 0" Id="122" Text="symbol rate" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="123" Joints="N(121:Out) h(5) v(90) N(107:L2)" xmlns="http://www.ni.com/PlatformFramework" />
+            <DataAccessor Bounds="590 205 40 15" DataItem="124" Id="129" Label="131">
+                <Terminal DataType="Int8[]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
             </DataAccessor>
-            <TextNode AttachedTo="20" Bounds="390 211 132 16" Id="22" Text="&quot; 8bit -&gt; 16bit -&gt; VALID?!&quot;" xmlns="http://www.ni.com/PlatformFramework" />
-            <Wire Id="23" Joints="N(20:Value) N(14:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="129" Bounds="500 205 85 16" Id="131" Text="input bit stream" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="132" Joints="N(129:Value) h(5) v(120) N(107:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Literal Bounds="320 370 99 15" DataType="@-401142148_0" Facade="NationalInstruments.MocCommon.Modeling.IEnumBehavior" Id="133" Label="135" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>0</p.Data>
+                <EnumBehavior Id="134" />
+            </Literal>
+            <TextNode AttachedTo="133" Bounds="320 370 0 0" Id="135" Text="differential PSK" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="136" Joints="N(133:Out) h(5) v(-25) N(96:L2)" xmlns="http://www.ni.com/PlatformFramework" />
+            <ArrayLiteral Bounds="195 345 101 26" DataType="Int32[]" Facade="NationalInstruments.MocCommon.Modeling.IArrayBehavior" Id="138" Label="140" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>
+                    <Array Lengths="4">
+                        <Elements>0,1,3,2</Elements>
+                    </Array>
+                </p.Data>
+                <ArrayBehavior ElementType="Int32">
+                    <p.DefaultElementValue>0</p.DefaultElementValue>
+                </ArrayBehavior>
+                <Literal Bounds="47 5 40 15" DataType="Int32" Facade="NationalInstruments.MocCommon.Modeling.INumericBehavior" Id="139">
+                    <p.Data>2</p.Data>
+                    <NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+                </Literal>
+            </ArrayLiteral>
+            <TextNode AttachedTo="138" Bounds="195 345 0 0" Id="140" Text="symbol values" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="141" Joints="N(138:Out) h(124) v(-10) N(96:L1)" xmlns="http://www.ni.com/PlatformFramework" />
         </BlockDiagram>
         <CPFrontPanel Height="[float]1600" Id="13" Width="[float]2000" />
-        <DataItem CallDirection="Input" CallIndex="0" DataType="Int16[]" Id="15" Name="&quot; 8bit -&gt; 16bit -&gt; VALID?!&quot;" />
+        <DataItem CallDirection="Input" CallIndex="0" DataType="Int8[]" Id="124" Name="input bit stream" />
         <DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+            <p.TypeReference TypeId="283220408_0">
+                <Enumeration Name="Enum">
+                    <Members>
+                        <EnumerationMember Value="0" Name="normal" />
+                        <EnumerationMember Value="1" Name="shifted" />
+                        <EnumerationMember Value="2" Name="offset" />
+                    </Members>
+                    <DataType>
+                        <UInt16 />
+                    </DataType>
+                </Enumeration>
+            </p.TypeReference>
+            <p.TypeReference TypeId="-401142148_0">
+                <Enumeration Name="">
+                    <Members>
+                        <EnumerationMember Value="0" Name="disable" />
+                        <EnumerationMember Value="1" Name="enable" />
+                    </Members>
+                    <DataType>
+                        <UInt16 />
+                    </DataType>
+                </Enumeration>
+            </p.TypeReference>
+            <p.TypeReference TypeId="830679310_0">
+                <Class Id="1" Name="" Cluster="">
+                    <ClosedGenericParameters />
+                    <GenericTypeDefinition>
+                        <Void />
+                    </GenericTypeDefinition>
+                    <BaseType>
+                        <Void />
+                    </BaseType>
+                    <Interfaces />
+                    <Members>
+                        <Field FieldAccessPolicy="ReadWrite" Name="samples per symbol (16)">
+                            <DataType>
+                                <Int32 />
+                            </DataType>
+                        </Field>
+                        <Field FieldAccessPolicy="ReadWrite" Name="symbol map">
+                            <DataType>
+                                <VariableArray>
+                                    <DereferenceType>
+                                        <ComplexDouble />
+                                    </DereferenceType>
+                                </VariableArray>
+                            </DataType>
+                        </Field>
+                        <Field FieldAccessPolicy="ReadWrite" Name="differential PSK">
+                            <DataType>
+                                <Enumeration Name="Enum">
+                                    <Members>
+                                        <EnumerationMember Value="0" Name="disable" />
+                                        <EnumerationMember Value="1" Name="enable" />
+                                    </Members>
+                                    <DataType>
+                                        <UInt16 />
+                                    </DataType>
+                                </Enumeration>
+                            </DataType>
+                        </Field>
+                        <Field FieldAccessPolicy="ReadWrite" Name="PSK type">
+                            <DataType>
+                                <Enumeration Name="Enum">
+                                    <Members>
+                                        <EnumerationMember Value="0" Name="normal" />
+                                        <EnumerationMember Value="1" Name="shifted" />
+                                        <EnumerationMember Value="2" Name="offset" />
+                                    </Members>
+                                    <DataType>
+                                        <UInt16 />
+                                    </DataType>
+                                </Enumeration>
+                            </DataType>
+                        </Field>
+                    </Members>
+                </Class>
+            </p.TypeReference>
             <p.TypeReference TypeId="-761183520_0">
                 <Class Id="1" Name="" Cluster="">
                     <ClosedGenericParameters />
