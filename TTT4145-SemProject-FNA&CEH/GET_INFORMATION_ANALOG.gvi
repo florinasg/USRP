@@ -134,7 +134,7 @@
             <Wire Id="102" Joints="N(100:Out) h(40) N(14:T1)" xmlns="http://www.ni.com/PlatformFramework" />
             <WhileLoop Bounds="420 100 570 225" DiagramId="186" Id="185">
                 <WhileLoop.Iteration Bounds="5 195 15 15" Id="187" />
-                <WhileLoop.Condition Bounds="35 15 15 15" Id="188" LoopConditionMode="ContinueIfTrue" />
+                <WhileLoop.Condition Bounds="35 15 15 15" Id="188" />
                 <MethodCall Bounds="105 75 40 40" Id="32" Target="Sound\ Input\ Read\.gvi">
                     <p.MethodDeclaration>
                         <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
@@ -165,20 +165,9 @@
                     <NumericBehavior Interpretation="Exact" ValueFormatter="LV:" />
                 </Literal>
                 <Wire Id="108" Joints="N(106:Out) h(35) N(32:B0)" xmlns="http://www.ni.com/PlatformFramework" />
-                <PropertyNode Bounds="215 85 150 75" HasErrorTerminals="False" Id="136" InstanceDataType="Wfm(Double)" Template="List" Terminals="instance in=172~0:5, instance out~150:5, c0t0v=204~150:35, c1t0v~150:50, c2t0v~150:65" VerticalChunkCount="3">
-                    <p.PropertyItem IsWrite="False">
-                        <PathElement>Y</PathElement>
-                    </p.PropertyItem>
-                    <p.PropertyItem IsWrite="False">
-                        <PathElement>t0</PathElement>
-                    </p.PropertyItem>
-                    <p.PropertyItem IsWrite="False">
-                        <PathElement>dt</PathElement>
-                    </p.PropertyItem>
-                </PropertyNode>
                 <ArrayIndex Bounds="165 85 40 30" Id="167" Terminals="array=168, c0t0v=241, c0t1v=172" />
                 <Wire Id="168" Joints="N(32:R1) N(167:array)" xmlns="http://www.ni.com/PlatformFramework" />
-                <Wire Id="172" Joints="N(167:c0t1v) h(5) v(-20) N(136:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="172" Joints="N(167:c0t1v) h(5) v(-10) N(314:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
                 <DataAccessor Bounds="425 115 40 15" DataItem="176" Id="181" Label="183">
                     <Terminal DataType="Int16[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
                 </DataAccessor>
@@ -188,8 +177,6 @@
                 <Wire Id="189" Joints="N(190:186) N(32:L0)" xmlns="http://www.ni.com/PlatformFramework" />
                 <Wire Id="192" Joints="N(32:R0) N(193:186)" xmlns="http://www.ni.com/PlatformFramework" />
                 <ToWordInteger Bounds="380 115 30 10" Id="203" />
-                <Wire Id="204" Joints="N(136:c0t0v) N(203:number)" xmlns="http://www.ni.com/PlatformFramework" />
-                <Wire Id="205" Joints="N(203:16bit integer) N(181:Value)" xmlns="http://www.ni.com/PlatformFramework" />
                 <Literal Bounds="105 145 40 15" DataType="Int32" Facade="NationalInstruments.MocCommon.Modeling.INumericBehavior" Id="239" Label="240" xmlns="http://www.ni.com/MocCommon">
                     <p.Data>0</p.Data>
                     <NumericBehavior Interpretation="Exact" ValueFormatter="LV:" />
@@ -199,6 +186,13 @@
                 <Wire Id="243" Joints="N(227:186) N(188:Input)" xmlns="http://www.ni.com/PlatformFramework" />
                 <Wire Id="259" Joints="N(258:186) N(32:L3)" xmlns="http://www.ni.com/PlatformFramework" />
                 <Wire Id="260" Joints="N(32:R3) h(5) v(55) N(261:186)" xmlns="http://www.ni.com/PlatformFramework" />
+                <PropertyNode Bounds="220 95 150 45" HasErrorTerminals="False" Id="314" InstanceDataType="Wfm(Double)" Template="List" Terminals="instance in=172~0:5, instance out~150:5, c0t0v=316~150:35">
+                    <p.PropertyItem IsWrite="False">
+                        <PathElement>Y</PathElement>
+                    </p.PropertyItem>
+                </PropertyNode>
+                <Wire Id="316" Joints="N(314:c0t0v) h(8) v(-10) N(203:number)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="317" Joints="N(203:16bit integer) N(181:Value)" xmlns="http://www.ni.com/PlatformFramework" />
                 <WhileLoop.Tunnel Bounds="-4 80 13 10" Docking="Left" Id="190" Terminals="185=310, 186=189" />
                 <WhileLoop.Tunnel Bounds="561 80 13 10" Docking="Right" Id="193" Terminals="185=63, 186=192" />
                 <WhileLoop.Tunnel Bounds="-4 20 13 10" Docking="Left" Id="227" Terminals="185=226, 186=243" />
@@ -224,20 +218,6 @@
                 <Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
             </DataAccessor>
             <TextNode AttachedTo="277" Bounds="272 115 38 16" Id="279" Text="input 0" xmlns="http://www.ni.com/PlatformFramework" />
-            <MethodCall Bounds="315 180 40 40" Id="280" Target="Sound\ Input\ Stop\.gvi">
-                <p.MethodDeclaration>
-                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
-                        <Parameter Id="L0" Desc="task ID" />
-                        <Parameter Id="L3" Desc="error in" />
-                        <Parameter Id="R0" Desc="task ID out" />
-                        <Parameter Id="R3" Desc="error out" />
-                    </MethodDeclaration>
-                </p.MethodDeclaration>
-                <Terminal DataType="UInt32" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-                <Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
-                <Terminal DataType="UInt32" Direction="Output" Hotspot="40 5" Id="R0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
-                <Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
-            </MethodCall>
             <MethodCall Bounds="365 180 40 40" Id="293" Target="Sound\ Input\ Start\.gvi">
                 <p.MethodDeclaration>
                     <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
@@ -252,12 +232,10 @@
                 <Terminal DataType="UInt32" Direction="Output" Hotspot="40 5" Id="R0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
                 <Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
             </MethodCall>
-            <Wire Id="305" Joints="N(14:R0) N(280:L0)" xmlns="http://www.ni.com/PlatformFramework" />
-            <Wire Id="306" Joints="N(14:R3) N(280:L3)" xmlns="http://www.ni.com/PlatformFramework" />
-            <Wire Id="307" Joints="N(280:R0) N(293:L0)" xmlns="http://www.ni.com/PlatformFramework" />
-            <Wire Id="309" Joints="N(280:R3) N(293:L3)" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="310" Joints="N(293:R0) N(190:185)" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="311" Joints="N(293:R3) N(258:185)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="312" Joints="N(14:R0) N(293:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="313" Joints="N(14:R3) N(293:L3)" xmlns="http://www.ni.com/PlatformFramework" />
         </BlockDiagram>
         <CPFrontPanel Height="[float]1600" Id="13" Width="[float]2000" />
         <DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="0" DataType="Int16[]" Id="176" Name="16-bit integer" />
